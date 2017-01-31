@@ -11,7 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by Konstantin Yalovik on 30.01.2017.
  */
 @Controller
-@RequestMapping("/example")
 public class LoginController {
 
     public static final String SUCCESSFUL_LOGIN = "successfulLogin";
