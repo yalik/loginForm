@@ -1,13 +1,23 @@
 package com.epam.model;
 
+import javax.persistence.*;
+
 /**
  * Created by Konstantin Yalovik on 30.01.2017.
  */
+@Entity
+@Table(name = "users")
 public class User {
+
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "username")
     private String username;
 
+    @Column(name = "password")
     private String password;
 
     public int getId() {
